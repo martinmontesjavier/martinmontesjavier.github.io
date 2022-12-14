@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<peliculas xsi:noNamespaceSchemaLocation="esquema_cinesllefia.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <pelicula>
+        <nombre>No te preocupes querida</nombre>
+        <portada>notepreocupesquerida.jpg</portada>
+        <trailer>https://youtu.be/kMwLgSTNxb8</trailer>
+        <valoracion>4</valoracion>
+        <voto>165</voto>
+        <clasificacion>PENDIENTE DE CALIFICACION</clasificacion>
+        <duracion>122</duracion>
+        <paises>
+            <pais>Estados Unidos</pais>
+        </paises>
+        <generos>
+            <genero>Drama</genero>
+            <genero>Misterio</genero>
+            <genero>Suspense</genero>
+        </generos>
+        <estreno fecha="2022-09-23"></estreno>
+        <directores>
+            <director>Brendan Lee</director>
+            <director>Jonas Spaccarotelli</director>
+            <director>Mark Anthony Little</director>
+            <director>Michael Edward King</director>
+            <director>Olivia Wilde</director>
+        </directores>
+        <guionistas>
+            <guionista>Carey Van Dyke</guionista>
+            <guionista>Katie Silberman</guionista>
+            <guionista>Shane Van Dyke</guionista>
+        </guionistas>
+        <productores>
+            <productor>New Line Cinema</productor>
+            <productor>Vertigo Entertainment</productor>
+        </productores>
+        <actores>
+            <actor>Chris Pine</actor>
+            <actor>Florence Pugh</actor>
+            <actor>Gemma Chan</actor>
+            <actor>Harry Styles</actor>
+            <actor>Kiki Layne</actor>
+            <actor>Olivia Wilde</actor>
+        </actores>
+        <sinopsis>
+            <parrafo>Centrado en la década de 1950, No te preocupes querida narra la historia de una pareja aparentemente feliz (interpretada por la actriz Florence Pugh y el cantante Harry Styles).</parrafo>
+            <parrafo>en una apacible comunidad estadounidense, donde él trabaja para una gran coorporación, mientras ella es una abnegada ama de casa. </parrafo> 
+            <parrafo>a poco, la preocupación de ella comienza a hacerse patente cuando empiece a descubrir detalles sobre el Proyecto Victoria, el trabajo que está desarrolando su marido. </parrafo> 
+            <parrafo>el resto de mujeres de los empleados se dedican a ser discretas y sumisas, ella comienza a hacerse preguntas y a comprender horrorizada que su felicidad y su tranquila vida están más en peligro que nunca.</parrafo> 
+        </sinopsis>
+    </pelicula>
+
+    <pelicula>
+            <nombre>Spider-Man:No Way Home - The More Fun Stuff Version</nombre>
+            <portada>spidermannowayhomethemorefunstuffversion.jpg</portada>
+            <trailer>https://youtu.be/SkmRT3M4Vx4</trailer>
+            <valoracion>4</valoracion>
+            <voto>7017</voto>
+            <clasificacion>No tiene</clasificacion>
+            <duracion>160</duracion>
+            <paises>
+                <pais>Estados Unidos</pais>
+            </paises>
+            <generos>
+                <genero>Ciencia ficción</genero>
+                <genero>Acción</genero>
+                <genero>Aventura</genero>
+                <genero>Fantasía</genero>
+            </generos>
+            <estreno fecha="2022-09-23"></estreno>
+            <directores>
+                <director>Brian Avery Galligan</director>
+                <director>David H. Venghaus Jr</director>
+                <director>George Cottle</director>
+                <director>Jon Watts</director>
+            </directores>
+            <guionistas>
+                <guionista>Chris Mckenna</guionista>
+                <guionista>Erik Sommers</guionista>
+                <guionista>Stan Lee</guionista>
+                <guionista>Steve Ditko</guionista>
+            </guionistas>
+            <productores>
+                <productor>Sony Pictures</productor>
+            </productores>
+            <actores>
+                <actor>Benedict Cumberbatch</actor>
+                <actor>Jacob Batalon</actor>
+                <actor>Jon Favreau</actor>
+                <actor>Marisa Tomei</actor>
+                <actor>Tom Holland</actor>
+                <actor>Zendaya</actor>
+            </actores>
+            <sinopsis>
+                <parrafo>Peter Parker está desenmascarado y ya no puede separar su vida normal de las altas apuestas de ser un superhéroe.</parrafo>
+                <parrafo>Cuando le pide ayuda al Doctor Strange, lo que está en juego se vuelve aún más peligroso, lo que lo obliga a descubrir lo que realmente significa ser Spider-Man.</parrafo> 
+            </sinopsis>
+        </pelicula>
+
+        <pelicula>
+            <nombre>Crímenes del futuro</nombre>
+            <portada>crmenesdelfuturo.jpg</portada>
+            <trailer>https://youtu.be/LUu8JTMZTaE</trailer>
+            <valoracion>4</valoracion>
+            <voto>6</voto>
+            <clasificacion>No tiene</clasificacion>
+            <duracion>107</duracion>
+            <paises>
+                <pais>Canadá</pais>
+            </paises>
+            <generos>
+                <genero>Drama</genero>
+                <genero>Terror</genero>
+                <genero>Ciencia ficción</genero>
+            </generos>
+            <estreno fecha="2022-09-23"></estreno>
+            <directores>
+                <director>David Cronenberg</director>
+                <director>David Warry-smith</director>
+                <director>Katerina Giannakopoulou</director>
+                <director>Ken A. Smith</director>
+                <director>Nefeli Rapti</director>
+            </directores>
+            <guionistas>
+                <guionista>David Cronenberg</guionista>
+            </guionistas>
+            <productores>
+                <productor>Argonauts Productions S.a.</productor>
+                <productor>Bell Media Studios</productor>
+                <productor>Cbc Films</productor>
+                <productor>Ingenious Media</productor>
+                <productor>Ontario Creates</productor>
+                <productor> Rocketscience</productor>
+                <productor>Serendipity Point Films</productor>
+                <productor>Téléfilm Canada</productor>
+            </productores>
+            <actores>
+                <actor>Don Mckellar</actor>
+                <actor>Kristen Stewart</actor>
+                <actor>Léa Seydoux</actor>
+                <actor>Scott Speedman</actor>
+                <actor>Viggo Mortensen</actor>
+                <actor>Welket Bungué</actor>
+            </actores>
+            <sinopsis>
+                <parrafo>Saul Tenser (Mortensen), célebre artista de performance, muestra públicamente la metamorfosis de sus órganos en actuaciones vanguardistas con su compañera Caprice (Seydoux). </parrafo>
+                <parrafo>Timlin (Stewart), una investigadora del Registro Nacional de Órganos, sigue obsesivamente sus movimientos. Es entonces cuando un grupo misterioso aparece: Desean aprovechar la fama de Saul para revelar al mundo la próxima etapa de la evolución humana...</parrafo> 
+            </sinopsis>
+        </pelicula>
+
+        <pelicula>
+            <nombre>El grito silencioso. El caso Roe V.Wade</nombre>
+            <portada>elgritosilenciosoelcasoroevwade.jpg</portada>
+            <trailer>No tiene</trailer>
+            <valoracion>4</valoracion>
+            <voto>10</voto>
+            <clasificacion>No tiene</clasificacion>
+            <duracion>112</duracion>
+            <paises>
+                <pais>Estados Unidos</pais>
+            </paises>
+            <generos>
+                <genero>Drama</genero>
+                <genero>Historia</genero>
+            </generos>
+            <estreno fecha="2022-09-23"></estreno>
+            <directores>
+                <director>Cathy Allyn</director>
+                <director>Nick Loeb</director>
+            </directores>
+            <guionistas>
+                <guionista>Cathy Allyn</guionista>
+                <guionista>Nick Loeb</guionista>
+            </guionistas>
+            <productores>
+                <productor>Bcl Finance Group</productor>
+                <productor>Smoke Shows y amp</productor>
+                <productor>Clown Shows</productor>
+            </productores>
+            <actores>
+                <actor>Jamie Kennedy</actor>
+                <actor>Joey Lawrence</actor>
+                <actor>Jon Voight</actor>
+                <actor>Nick Loeb</actor>
+                <actor>Robert Davi</actor>
+                <actor>Stacey Dash</actor>
+            </actores>
+            <sinopsis>
+                <parrafo>El Dr. Bernard Nathanson y la Dra. Mildred Jefferson se enfrentan en una batalla nacional en esta conspiración incalculable que condujo al caso judicial más famoso y controvertido de la historia.</parrafo>
+            </sinopsis>
+        </pelicula>
+
+        <pelicula>
+            <nombre>Los Buscamundos</nombre>
+            <portada>losbuscamundos.jpg</portada>
+            <trailer>https://youtu.be/nStlNg2Cr74</trailer>
+            <valoracion>4</valoracion>
+            <voto>26</voto>
+            <clasificacion>No tiene</clasificacion>
+            <duracion>82</duracion>
+            <paises>
+                <pais>Bélgica</pais>
+                <pais>Francia</pais>
+            </paises>
+            <generos>
+                <genero>Animación</genero>
+                <genero>Aventura</genero>
+                <genero>Familia</genero>
+                <genero>Comedia</genero>
+            </generos>
+            <estreno fecha="2022-09-23"></estreno>
+            <directores>
+                <director>Samuel Tourneux</director>
+            </directores>
+            <guionistas>
+                <guionista>David Michel</guionista>
+                <guionista>Gerry Swallow</guionista>
+                <guionista>Jules Verne</guionista>
+            </guionistas>
+            <productores>
+                <productor>Cottonwood Media</productor>
+                <productor>Studiocanal</productor>
+                <productor>Ufund</productor>
+                <productor>Umedia</productor>
+            </productores>
+            <actores>
+                <actor>Céline Ronté</actor>
+                <actor>Damien Frette</actor>
+                <actor>Julien Crampon</actor>
+                <actor>Kaycie Chase</actor>
+                <actor>Véronique Augereau</actor>
+            </actores>
+            <sinopsis>
+                <parrafo>Passepartout, un mono ingenuo pero vivaz, siempre ha soñado con emprender una aventura.</parrafo>
+                <parrafo>La oportunidad viene en forma de Phileas Frog, un exploradora la vez que estafador, y una apuesta multimillonaria: establecer un nuevo récord para una gira por el mundo.</parrafo>
+                <parrafo>Desde desiertos ardientes hasta selvas misteriosas, desde princesas intrépidas hasta langostas adoradoras de volcanes, Passepartout descubrirá lo increíble, maravilloso y loco que es el mundo.</parrafo> 
+            </sinopsis>
+        </pelicula>
+
+        <pelicula>
+            <nombre>Modelo 77</nombre>
+            <portada>modelo77.jpg</portada>
+            <trailer>https://youtu.be/Lp-AtB0ny3k</trailer>
+            <valoracion>4</valoracion>
+            <voto>14</voto>
+            <clasificacion>No tiene</clasificacion>
+            <duracion>125</duracion>
+            <paises>
+                <pais>España</pais>
+            </paises>
+            <generos>
+                <genero>Drama</genero>
+            </generos>
+            <estreno fecha="2022-09-23"></estreno>
+            <directores>
+                <director>Alberto Rodríguez Librero</director>
+            </directores>
+            <guionistas>
+                <guionista>Alberto Rodríguez Librero</guionista>
+                <guionista>Rafael Cobos</guionista>
+            </guionistas>
+            <productores>
+                <productor>Atípica Films</productor>
+                <productor>Movistar+</productor>
+            </productores>
+            <actores>
+                <actor>Catalina Sopelana</actor>
+                <actor>Fernando Tejero</actor>
+                <actor>Javier Gutiérrez</actor>
+                <actor>Jesús Carroza</actor>
+                <actor>Miguel Herrán</actor>
+                <actor>Xavi Sáez</actor>
+            </actores>
+            <sinopsis>
+                <parrafo>Cárcel Modelo. Barcelona 1977. Manuel (Miguel Herrán), un joven contable, encarcelado y pendiente de juicio por cometer un desfalco, se enfrenta a una posible pena de entre 10 y 20 años, un castigo desproporcionado para la cuantía de su delito. </parrafo>
+                <parrafo>Pronto, junto a su compañero de celda, Pino (Javier Gutiérrez), se une a un grupo de presos comunes que se está organizando para exigir una amnistía. Se inicia una guerra por la libertad que hará tambalearse al sistema penitenciario español. </parrafo>
+                <parrafo>Si las cosas están cambiando fuera, dentro también tendrán que hacerlo.</parrafo>
+            </sinopsis>
+        </pelicula>
+
+        <pelicula>
+            <nombre>E.T.El extraterrestre</nombre>
+            <portada>etelextraterrestre.jpg</portada>
+            <trailer>https://www.cinesa.es/Manager/Peliculas/etelextraterrestre/cartel395_270.jpg</trailer>
+            <valoracion>4</valoracion>
+            <voto>237</voto>
+            <clasificacion>No tiene</clasificacion>
+            <duracion>115</duracion>
+            <paises>
+                <pais>Estados Unidos</pais>
+            </paises>
+            <generos>
+                <genero>Ciencia ficción</genero>
+                <genero>Aventura</genero>
+                <genero>Familia</genero>
+                <genero>Fantasía</genero>
+            </generos>
+            <estreno fecha="2022-09-23"></estreno>
+            <directores>
+                <director>Steven Spielberg</director>
+            </directores>
+            <guionistas>
+                <guionista>Melissa Mathison</guionista>
+            </guionistas>
+            <productores>
+                <productor>Universal Pictures</productor>
+            </productores>
+            <actores>
+                <actor>Dee Wallace</actor>
+                <actor>Drew Barrymore</actor>
+                <actor>Erika Eleniak</actor>
+                <actor>Henry Thomas</actor>
+                <actor>Peter Coyote</actor>
+                <actor>Robert Macnaughton</actor>
+            </actores>
+            <sinopsis>
+                <parrafo>Un pequeño ser de otro planeta se queda abandonado en la Tierra cuando su nave se marcha olvidándose de él. Tiene miedo. </parrafo>
+                <parrafo>Está completamente solo, pero se hará amigo de un niño, que lo esconde en su casa. El niño y sus hermanos intentarán encontrar la forma de que el pequeño extraterrestre regrese a su planeta antes de que los científicos y la policía lo encuentren.</parrafo>
+            </sinopsis>
+        </pelicula>
+
+        <pelicula>
+            <nombre>Moonage Daydream</nombre>
+            <portada>moonagedaydream.jpg</portada>
+            <trailer>https://youtu.be/2ywSXwupOdU</trailer>
+            <valoracion>4</valoracion>
+            <voto>55</voto>
+            <clasificacion>PENDIENTE DE CALIFICACIÓN</clasificacion>
+            <duracion>140</duracion>
+            <paises>
+                <pais>Estados Unidos</pais>
+            </paises>
+            <generos>
+                <genero>Documental</genero>
+                <genero>Música</genero>
+            </generos>
+            <estreno fecha="2022-09-23"></estreno>
+            <directores>
+                <director>Brett Morgen</director>
+            </directores>
+            <guionistas>
+                <guionista>Brett Morgen</guionista>
+            </guionistas>
+            <productores>
+                <productor>Bmg</productor>
+                <productor>Live Nation Productions</productor>
+                <productor>Public Road Productions</productor>
+            </productores>
+            <actores>
+                <actor>Bing Crosby</actor>
+                <actor>David Bowie</actor>
+                <actor>Dick Cavett</actor>
+                <actor>Iman</actor>
+                <actor>Lou Reed</actor>
+                <actor>Russell Harty</actor>
+            </actores>
+            <sinopsis> 
+                <parrafo>'Moonage Daydream' es una inmersión en el arte y la música de David Bowie a través de un género imposible de calificar.</parrafo>
+                <parrafo>Considerado uno de los grandes artistas de nuestra época, David Bowie lleva más de 50 años cambiando la cultura. </parrafo>
+                <parrafo>'Moonage Daydream' es la primera película apoyada totalmente por los herederos de David Bowie, que han permitido a Brett Morgen acceder a su enorme colección.</parrafo>
+                <parrafo>Contada a través de magníficas y caleidoscópicas imágenes e interpretaciones hasta ahora desconocidas -anclada por las palabras y la música de David Bowie-,</parrafo>
+                <parrafo>'Moonage Daydream' invita a los espectadores a sumirse en un mundo único: El mundo "Bowie".</parrafo>
+            </sinopsis>
+        </pelicula>
+</peliculas>
