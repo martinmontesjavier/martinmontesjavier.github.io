@@ -169,7 +169,7 @@ li a{
     padding-left: 40px;
     padding-right: 40px;
     color: orange;
-    border: 1px solid gray;
+    border: 1px solid #D5D5D5;
     font-size: 25px;
 }
 
@@ -184,7 +184,7 @@ li a{
 
 .imagenes{
     display: flex;
-    border: 1px solid gray;
+    border: 1px solid #D5D5D5;
     width: 1700px;
     margin-right: 10px;
     margin-left: 10px;
@@ -218,7 +218,7 @@ li a{
 }
 
 .informacion{
-    border: 1px solid gray;
+    border: 1px solid #D5D5D5;
     width: 1200px;
     background-color: white; 
     margin-right: 10px;
@@ -230,12 +230,12 @@ li a{
 
 .informacion ul li{
     padding: 5px;
-    margin: 5px;
+    margin: 10px;
 }
 
 .sinopsis{
     justify-content: center;
-    border: 1px solid gray;
+    border: 1px solid #D5D5D5;
     width: 1230px;
     margin: 10px auto 10px auto;
     background-color: white; 
@@ -278,7 +278,7 @@ li a{
     list-style: none;
 }
 .info a{
-    color: grey;
+    color: gray;
 }
 
 .info h3{
