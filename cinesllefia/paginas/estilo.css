@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "roboto",sans-serif;
+    font-size: 20px;
+}
+
+
+
+
+/*header*/
+
+.logo_cinesa{
+    width: 40px;
+}
+
+.menu-top1 ul{
+    width: 100%;
+    display: flex;
+    margin-top: 5px;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 7px; 
+}
+
+.menu-top1 ul li a{
+    color: gray;
+}
+
+.menu-top1 ul li:last-child{
+    border-left: 2px solid grey;
+    
+}
+
+.cabecera{
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+
+.menu-top2 li{
+    padding: 6px;
+}
+
+.menu-top2 ul{
+    width: 1000px;
+    display: flex;
+    margin: 5px;
+    list-style: none;
+    padding: 20px;
+    text-align: center;
+}
+.menu-top2 ul li a{
+    color: black;
+    width: 200px;
+    padding: 22px;
+}
+
+.cinesa{
+    width: 250px;
+    margin-top: 10px;
+}
+
+
+.menu-top2 ul li:hover{
+    background-color: #FFF10E;
+}
+
+
+
+/*MAIN*/
+.fondo{
+    background-image: url(../imagenes/thor.jpg);
+    background-repeat: repeat-x;
+    background-position: top center;
+    background-size: cover;
+}
+
+.menu-principal{
+    margin: 0 auto 0 auto;
+}
+
+.menu-principal ul li{
+    margin: 20px auto 0 auto;
+}
+.menu-principal ul{
+    display: flex;
+    margin: 0 auto 0 auto;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-principal ul li a{
+    background-color: #D5D5D5;
+    color: #0076EC;
+}
+
+.menu-principal ul li a:hover{
+    background-color: #0076EC;
+    color: white;
+}
+
+li a{
+    padding: 10px;
+    text-decoration: none;
+}
+
+.boton-blanco{
+    background-color: white;
+    color: #0076EC;
+    text-decoration: none;
+}
+
+.color-azul{
+    font-family: "oswald",sans-serif;
+    font-size: 30px;
+    color: #0076EC;
+}
+
+.boton-blanco:hover{
+    background-color: #0076EC;
+    color: white
+}
+
+.boton-azul{
+    background-color: #0076EC;
+    color: white
+}
+
+.container-main{
+    background-color: white;
+    margin: 0 auto 0 auto;
+    border: 1px solid;
+    border-color: #D5D5D5;
+    width: 1250px;
+}
+
+.separador{
+    padding: 100px;
+    border-top: 3px solid;
+    border-color: #FFF10E;
+}
+
+.flex{
+    display: flex;
+}
+
+/*COLDPLAY*/
+.encabezado ul{
+    align-items: center;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.encabezado ul li{
+    padding: 10px;
+}
+
+.encabezado ul li h1{
+    background-color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: orange;
+    border: 1px solid gray;
+    font-size: 25px;
+}
+
+.encabezado ul li a{
+    color: gray;
+    text-decoration: none;
+}
+.contenido{
+    display: flex;
+    justify-content: center;
+}
+
+.imagenes{
+    display: flex;
+    border: 1px solid gray;
+    width: 1700px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: white; 
+}
+
+.img-portada{
+    margin: 20px;
+}
+
+.img-portada img{ 
+    height: 300px;
+}
+
+.img-espectaculo{
+    margin: 20px 0px 20px 20px ;
+}
+
+.img-espectaculo img{
+    height: 300px;
+    width: 430px;
+    justify-content: flex-end;
+}
+
+.estrellas{
+    color: #FFF10E;
+}
+
+.comparte{
+    justify-items: flex-end;
+}
+
+.informacion{
+    border: 1px solid gray;
+    width: 1200px;
+    background-color: white; 
+    margin-right: 10px;
+}
+
+.informacion ul{
+    list-style: none;
+}
+
+.informacion ul li{
+    padding: 5px;
+    margin: 5px;
+}
+
+.sinopsis{
+    justify-content: center;
+    border: 1px solid gray;
+    width: 1230px;
+    margin: 10px auto 10px auto;
+    background-color: white; 
+    
+}
+.sinopsis p{
+    margin: 20px;
+}
+.sinopsis h3{
+    margin: 20px;
+}
+
+/*FOOTER*/
+
+.menu-redes-sociales ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.menu-redes-sociales ul li i{
+    padding: 50px;
+    margin: 20px auto 20px auto;
+    color: #0076EC;
+}
+.container-info{
+    display: flex;
+    justify-content: center;
+}
+
+
+.info{
+    padding: 20px;
+}
+
+.info li{
+    display: flex;
+    margin: 5px;
+    list-style: none;
+}
+.info a{
+    color: grey;
+}
+
+.info h3{
+    color: #0076EC;
+    margin-left: 15px;
+}
