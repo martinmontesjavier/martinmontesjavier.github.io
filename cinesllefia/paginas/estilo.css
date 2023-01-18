@@ -83,6 +83,7 @@ body{
 
 .menu-principal{
     margin: 0 auto 0 auto;
+    background-color: white;
 }
 
 .menu-principal ul li{
@@ -134,7 +135,7 @@ li a{
 }
 
 .container-main{
-    background-color: white;
+    background-color: #D5D5D5;
     margin: 0 auto 0 auto;
     border: 1px solid;
     border-color: #D5D5D5;
@@ -159,7 +160,20 @@ li a{
     justify-content: center;
     margin-top: 40px;
 }
+.flecha{
+    color: gray;
+}
 
+.comparte{
+    color: #D5D5D5;
+}
+
+
+.espacio{
+    padding: 20px;
+    background-color: white;
+    width: 100%;
+}
 .encabezado ul li{
     padding: 10px;
 }
@@ -169,7 +183,6 @@ li a{
     padding-left: 40px;
     padding-right: 40px;
     color: orange;
-    border: 1px solid #D5D5D5;
     font-size: 25px;
 }
 
@@ -184,7 +197,6 @@ li a{
 
 .imagenes{
     display: flex;
-    border: 1px solid #D5D5D5;
     width: 1700px;
     margin-right: 10px;
     margin-left: 10px;
@@ -218,7 +230,6 @@ li a{
 }
 
 .informacion{
-    border: 1px solid #D5D5D5;
     width: 1200px;
     background-color: white; 
     margin-right: 10px;
@@ -235,10 +246,10 @@ li a{
 
 .sinopsis{
     justify-content: center;
-    border: 1px solid #D5D5D5;
     width: 1230px;
     margin: 10px auto 10px auto;
     background-color: white; 
+    padding: 2px;
     
 }
 .sinopsis p{
