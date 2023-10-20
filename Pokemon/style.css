@@ -1,0 +1,64 @@
+body{
+    background-image: url(imagenes/adivina.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+/*
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 50px;
+    border: 1px solid black; 
+}
+*/
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.button{
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    bottom: 20px;
+    right: 50%;
+    background-image: url(imagenes/es.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#charizard{
+    position: absolute;
+    bottom: 200px;
+    left: 200px;
+}
+
+
+
+.info{
+    background-color: white;
+    padding: 50px;
+    padding-top: 500px;
+    position: absolute;
+    right: 300px;
+    bottom: 10px;
+    width: 600px;
+    height: 750px;
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    background-image: url(imagenes/carta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.info img{
+    position: absolute;
+    top: 80px;
+    left: 50px;
+}
