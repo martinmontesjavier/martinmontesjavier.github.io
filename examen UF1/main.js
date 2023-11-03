@@ -118,11 +118,40 @@ const menus = [
     });
 
     /*Calcular hora apertura*/
-
-
     botonCalcular.addEventListener("click",calcularHoraApertura)
 
+
     function calcularHoraApertura() {
+      const horaAbrir = document.getElementById("horaApertura").value;
+      // const horaCerrar = document.getElementById("horaCerrada").value;
+      const horaFinal = document.getElementById("horaFinal");
+    
+      const arrayHoraAbrir = horaAbrir.split(":");
+    
+      const horaAperturaInt = parseInt(arrayHoraAbrir[0]);
+      const minutosAperturaInt = parseInt(arrayHoraAbrir[1]);
+
+      const horaAhora = miFecha.getHours()
+      const minutosAhora = miFecha.getMinutes()
+      console.log(horaAhora)
+      console.log(minutosAhora)
+
+      let horasTrabajo = (24 + horaAperturaInt - horaAhora) % 24;
+      let minutosTrabajo = (60 + minutosAperturaInt - minutosAhora) % 60;
+
+      if(horasTrabajo==0){
+        if(minutosTrabajo==0){
+          horasTrabajo=24
+        }
+      }
+        
+      horaFinal.innerHTML = `Faltan: ${horasTrabajo} horas y ${minutosTrabajo} minutos para abrir.`;
+      
+    }
+
+
+    // Pensaba que era calcular cuantas horas eran desde que cerraba, por eso esta versión
+    function calcularHoraApertura2() {
       const horaAbrir = document.getElementById("horaApertura").value;
       const horaCerrar = document.getElementById("horaCerrada").value;
       const horaFinal = document.getElementById("horaFinal");
