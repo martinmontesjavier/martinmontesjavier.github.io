@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Restaurante Menu</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+  <style>
+    /*
+    body{
+      background-image: url(imagenes/fondo.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }*/
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Menú del Restaurante</h1>
+    <p id="diaHoy"></p>
+    <div class="form-group">
+      <label for="daySelector">Selecciona el dia:</label>
+      <select class="form-control" id="selectorDia">
+        <option value="0">Lunes</option>
+        <option value="1">Martes</option>
+        <option value="2">Miércoles</option>
+        <option value="3">Jueves</option>
+        <option value="4">Viernes</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Horario de apertura:</label>
+      <input type="time" id="horaApertura">
+    </div>
+    <div class="form-group">
+      <label>Horario de cierre:</label>
+      <input type="time" id="horaCerrada">
+    </div>
+
+    <div id="horaFinal">Faltan :</div>
+
+    <button id="botonCalcular" class="btn btn-primary mt-2 mb-5">CALCULAR</button>
+    <div class="form-group">
+      <label>Busca tu plato</label>
+      <input type="text" id="buscador" class="form-control" placeholder="Buscar en el menú">
+      <button id="botonBuscar" class="btn btn-primary mt-2">BUSCAR</button>
+    </div>
+    <div id="menu">
+      
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
