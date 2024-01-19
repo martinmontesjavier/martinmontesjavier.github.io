@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicciones Javier Martín Montes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <style>
+        header{
+            background-color: black;
+        }
+        footer{
+            background-color: black;
+        }
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 70vh; /* Ajusta la altura mínima según tus necesidades */
+        }
+
+        .video {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img width="50" src="src/imagenes/logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <p class="my-auto text-light">Javier Martin Montes</p>
+            </div>
+        </nav>
+    </header>
+    <main class="bg-dark">
+        <div class="container">
+            <h1 class="text-center mt-5 text-light">ADICCIONES - Javier Martin Montes</h1>
+            <div class="video">
+                <iframe class="mb-5" width="560" height="315" src="https://www.youtube.com/embed/EYBqrH9IMIw?si=oMuHD8u50KArjfp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+            <div class="container-fluid d-flex justify-content-center"> 
+                <div class="collapse navbar-collapse" id="navbarColor02">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item mx-auto">
+                            <a class="nav-link active" href="https://pixabay.com/es/service/license-summary/" target="_blank">Licencia audio y videos</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item mx-auto">
+                            <div class="audio">
+                                <audio controls>
+                                    <source src="src/audios/cancion.mp3" type="audio/mp3">
+                                    Tu navegador no soporta la etiqueta de audio.
+                                </audio>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item mx-auto">
+                            <a class="nav-link active" href="https://openai.com/policies/usage-policies" target="_blank">Licencia logo</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
