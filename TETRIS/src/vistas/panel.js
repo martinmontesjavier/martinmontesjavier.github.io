@@ -39,10 +39,41 @@ export const panel = {
         html += `<div class="fila bg-dark d-flex">`;
     
         for (let columna = 0; columna < panel.matriz[fila].length; columna++) {
-          if (panel.matriz[fila][columna] == 1) {
+          let valorPieza = panel.matriz[fila][columna]
+          switch (valorPieza) {
+            case 0:
+              panel.color = 'bg-dark'
+              break;
+            case 2:
+              panel.color = 'bg-primary bg-gradient'
+              break;
+            case 3:
+              panel.color = 'bg-secondary bg-gradient'
+              break;
+            case 4:
+              panel.color = 'bg-success bg-gradient'
+              break;
+            case 5:
+              panel.color = 'bg-danger bg-gradient'
+              break;
+            case 6:
+              panel.color = 'bg-warning bg-gradient'
+              break;
+            case 7:
+              panel.color = 'bg-light'
+              break;
+            case 8:
+              panel.color = 'bg-info bg-gradient'
+              break;
+            default:
+              panel.color = 'espana'
+              break;
+          }
+          
+          if (panel.matriz[fila][columna] > 0) {
             html += `<div class="columna ${panel.color} "></div>`;
           } else if (panel.matriz[fila][columna] == 0) {
-            html += `<div class="columna bg-dark"></div>`;
+            html += `<div class="columna ${panel.color}"></div>`;
           }
         }
     
@@ -61,15 +92,18 @@ export const panel = {
       // console.log('posicion',posicion)
       
       panel.color = models[m].color
+      panel.clase = models[m].nombre
 
       const pieza = new ModeloPieza(m,0,posicion,0,panel.color)
 
       // console.log(pieza)
-      
+      console.log(panel.clase)
       return pieza
     },
 
     nuevaPieza: null,
+
+    clase:null,
 
     insertarPieza() {
       // const filaInicial = 0;
@@ -153,7 +187,7 @@ export const panel = {
         for(let x= 0;x<panel.nuevaPieza.longitud;x++){
             const elemento = panel.nuevaPieza.matriz[y][x]
 
-            if (panel.matriz[y+panel.nuevaPieza.y][x+nuevaX] == 1) {
+            if (panel.matriz[y+panel.nuevaPieza.y][x+nuevaX] > 0) {
               return;
             }
             if(elemento){
@@ -176,7 +210,7 @@ export const panel = {
         for(let x= 0;x<panel.nuevaPieza.longitud;x++){
             const elemento = panel.nuevaPieza.matriz[y][x]
 
-            if (panel.matriz[y+panel.nuevaPieza.y][x+nuevaX] == 1) {
+            if (panel.matriz[y+panel.nuevaPieza.y][x+nuevaX] > 0) {
               return;
             }
             if(elemento){
@@ -230,7 +264,11 @@ export const panel = {
               const elemento = panel.nuevaPieza.matriz[y][x];
               const nextY = y + nuevaY;
 
-              if (elemento == 1 && panel.matriz[nextY][x + panel.nuevaPieza.x] == 1) {
+              if(panel.nuevaPieza.y == 0 && panel.matriz[nextY][x + panel.nuevaPieza.x] > 0){
+                panel.acabarPartida()
+              }
+
+              if (elemento > 0 && panel.matriz[nextY][x + panel.nuevaPieza.x] > 0) {
                   panel.insertarPieza(); 
                   panel.nuevaPieza = panel.crearNuevaPieza();
                   panel.sumarPuntos(50)
@@ -274,9 +312,12 @@ export const panel = {
       for (let fila = 0; fila < panel.matriz.length-1; fila++) {
           let cont = 0;
           for (let columna = 0; columna < panel.matriz[fila].length; columna++){
-              if (panel.matriz[fila][columna] === 1) {
+              if (panel.matriz[fila][columna] > 0) {
                   cont++;
               } 
+              if(panel.matriz[fila] == 0 && cont>2){
+                panel.acabarPartida()
+              }
           }
           if (cont === 12) {
               panel.matriz.splice(fila, 1);
@@ -326,6 +367,18 @@ export const panel = {
           <button class="bg-success text-light mt-3 botonGuardar" id="botonGuardar">GUARDAR</button>
           </div>
           `
+          // const fechaModifica2 = modificaData2(new Date().toISOString());
+          //     const fechaFormateada = modificaData(fechaModifica2);
+          //     const datosEjemploPartida = {
+          //       avatar: '<img width=50 src="img/avatar4.svg">',
+          //       nick: document.querySelector('#nick').value ,
+          //       puntos: panel.puntos ,
+          //       fecha: fechaFormateada
+          //     }
+          //     panel.partidaGuardada=datosEjemploPartida;
+          //     document.querySelector('main').innerHTML = ranking.template
+          //     ranking.script()
+
           document.querySelector('main').addEventListener('click',(e)=>{
             if(e.target.classList.contains('botonGuardar')){
               const fechaModifica2 = modificaData2(new Date().toISOString());
@@ -349,19 +402,49 @@ export const panel = {
         }
     },
 
-    nivel:1,
+    nivel:0,
 
     comprobarNivel(){
       const puntosParaSiguienteNivel = (panel.nivel + 1) * 5000;
       let nivelAnterior = panel.nivel
+      
+      let html = `<div id="juegoPrincipal">`;
       if (panel.puntos >= puntosParaSiguienteNivel) {
         panel.nivel++
-        // if(nivelAnterior < panel.nivel){
-        //   console.log('Aqui se mete')
-        //   document.querySelector('#panel').innerHTML = panel.pintaPanel(panel.matrizLimpia)
-        // }
+        clearInterval(panel.intervalo)
+        let html = `<div id="juegoPrincipal">`;
+    
+        for (let fila = 0; fila < panel.matriz.length; fila++) {
+          html += `<div class="fila bg-dark d-flex">`;
+      
+          for (let columna = 0; columna < panel.matriz[fila].length; columna++) {
+            let valorPieza = panel.matriz[fila][columna]
+            switch (valorPieza) {
+              case 0:
+                panel.color = 'bg-dark'
+              default:
+                panel.color = 'espana'
+                break;
+            }
+            
+            if (panel.matriz[fila][columna] > 1) {
+              panel.matriz[fila][columna] = 0
+              html += `<div class="columna ${panel.color} "></div>`;
+            } else if (panel.matriz[fila][columna] == 0) {
+              html += `<div class="columna ${panel.color}"></div>`;
+            }
+          }
+      
+          html += `</div>`;
+        }
+      
+        html += `</div>`;
+
+        document.querySelector('#panel').innerHTML = html
+        panel.iniciarMovimiento()
       }
       document.querySelector('#nivel').innerHTML = panel.nivel
+      
     },
 
     color: null,

@@ -18,7 +18,7 @@ export const juego = {
 						<span>⬇️:mover pieza a la izquierda</span>
 						<span>⬅️:bajar pieza</span>
 					</div>
-						<h4>Nivel: <span id="nivel">1</span></h4>
+						<h4>Nivel: <span id="nivel">0</span></h4>
 						<h4>Tiempo: <span id="tiempo">0:00</span></h4>
 						<h4>Lineas: <span id="lineas">0</span></h4>
 						<h4>Puntos: <span id="puntos">211122</span></h4>
