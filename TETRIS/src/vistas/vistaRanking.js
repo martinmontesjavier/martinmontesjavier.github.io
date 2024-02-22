@@ -370,6 +370,27 @@ export const ranking = {
           
     `,
 
+    partides : [
+        {
+          avatar: '<img width=50 src="img/avatar1.svg">',
+          nick: 'PACO',
+          puntos: 150,
+          fecha: '2023-09-27'
+        },
+        {
+          avatar: '<img width=50 src="img/avatar2.svg">',
+          nick: 'JUAN',
+          puntos: 220,
+          fecha: '2023-09-28'
+        },
+        {
+            avatar: '<img width=50 src="img/avatar3.svg">',
+            nick: 'LOLITO',
+            puntos: 2200,
+            fecha: '2023-09-28'
+          }
+    ],
+
     script: () =>{
         boton.addEventListener('click', pintaRanking);
 
@@ -377,26 +398,7 @@ export const ranking = {
 // guardar.addEventListener('click', pintaDatosPartida);
 
 
-const partides = [
-    {
-      avatar: '<img width=50 src="img/avatar1.svg">',
-      nick: 'PACO',
-      puntos: 150,
-      fecha: '2023-09-27'
-    },
-    {
-      avatar: '<img width=50 src="img/avatar2.svg">',
-      nick: 'JUAN',
-      puntos: 220,
-      fecha: '2023-09-28'
-    },
-    {
-        avatar: '<img width=50 src="img/avatar3.svg">',
-        nick: 'LOLITO',
-        puntos: 2200,
-        fecha: '2023-09-28'
-      }
-];
+
 
 const datosEjemploPartida = {
     avatar: '<img width=50 src="img/avatar4.svg">',
@@ -408,51 +410,51 @@ const datosEjemploPartida = {
 
 
     
-pintaTabla(partides)
+pintaTabla(ranking.partides)
 // insertaNuevaPartida(datosEjemploPartida)
-
-pintaDatosPartida(panel.partidaGuardada)
-
-function pintaRanking(event){
-    event.preventDefault()
-    let ranking =`
-                <h2 class="text-center text-light">Ranking</h2>
-					<table class="table table-dark align-middle">
-						<theader>
-							<tr class="bg-dark">
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-						</theader>
-						<tbody>
-							<tr>
-								<td class="fs-2">1</td>
-								<td><img src="" alt="avatar" /></td>
-								<td>ANDER</td>
-								<td>1255</td>
-							</tr>
-							<tr>
-								<td class="fs-2">2</td>
-								<td><img src="" alt="avatar" /></td>
-								<td>ANDER</td>
-								<td>1255</td>
-							</tr>
-							<tr>
-								<td class="fs-2">3</td>
-								<td><img src="" alt="avatar" /></td>
-								<td>ANDER</td>
-								<td>1255</td>
-							</tr>
-						</tbody>
-						<tfoot></tfoot>
-					</table>
-    `
+let cont = 0
+if(panel.partidaGuardada !=null){
+    pintaDatosPartida(panel.partidaGuardada)
     
-    // console.log(ranking)
-
 }
+
+pintaRanking()
+
+         function pintaRanking(){
+            let tabla=` 
+            <h2 class="text-center text-light">Ranking</h2>
+            <table class="table table-dark align-middle">
+              <theader>
+                <tr class="bg-dark">
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </theader>
+              <tbody id="tablaRanking">
+                `
+                ranking.partides.sort((a, b) => b.puntos - a.puntos)
+                ranking.partides.forEach(element => {
+                  tabla += 
+                  ` <tr>
+                      <td>${element.avatar}</td>
+                      <td>${element.nick}</td>
+                      <td>${element.puntos}</td>
+                      <td>${element.fecha}</td>
+                    </tr>
+                  `
+                })
+          
+              tabla+=
+
+              `
+                  </tbody>
+                  <tfoot></tfoot>
+                </table>
+              `
+              document.querySelector("#ranking").innerHTML=tabla;
+          }
 
 
 function pintaTabla(partides){
@@ -485,7 +487,7 @@ function pintaTabla(partides){
 function insertaNuevaPartida(datosEjemploPartida) {
     // console.log("Guardar partida?")
     // console.log(datosEjemploPartida)
-	partides.push(datosEjemploPartida)
+	ranking.partides.push(datosEjemploPartida)
 	
 	
 }
@@ -501,22 +503,24 @@ function pintaDatosPartida(partida){
 	// confirm (mensaje)
 	if (confirm(mensaje)){
 		insertaNuevaPartida(partida)
-		pintaTabla(partides)
+		pintaTabla(ranking.partides)
+        panel.puntos = 0
 		console.log("Partida guardada")
+        panel.puntos = 0
 	}else{
 		console.log("No se ha guardado la partida")
 	}
 	
 }
 
-let clonadoPartidas = [...partides]
+let clonadoPartidas = [...ranking.partides]
 console.log('CLONADO DE PARTIDAS', clonadoPartidas)
 
 /*HISTORIA 4*/
 
 const buscador = texto => {
     texto = texto.toLowerCase(); 
-    return partides.filter(partida => partida.nick.toLowerCase().includes(texto));
+    return ranking.partides.filter(partida => partida.nick.toLowerCase().includes(texto));
 };
 
 
@@ -530,7 +534,7 @@ document.querySelector('#botonBuscar').addEventListener('click', () => {
 
 document.querySelector('#button-addon2').addEventListener('click', () => {
     console.log('entra en cancelar')
-    pintaTabla(partides) 
+    pintaTabla(ranking.partides) 
 });
 
 
@@ -541,7 +545,8 @@ function orden(campo, tipo) {
     icono.className = `bi bi-arrow-${tipo === 'up' ? 'down' : 'up'}-square-fill`;
 
     // Aplica el orden al array partides
-    partides.sort((a, b) => {
+    ranking.partides.sort((a, b) => {
+        // Orden alfabético ascendente o descendente
         if (tipo === 'up') {
             return a[campo] > b[campo] ? 1 : -1;
         } else {
@@ -550,22 +555,39 @@ function orden(campo, tipo) {
     });
 
     // Vuelve a pintar la tabla con el array ordenado
-    pintaTabla(partides);
+    pintaTabla(ranking.partides);
 }
 
+let metodoNick = 'up';
+let metodoPuntos = 'up';
+let metodoFecha = 'up';
 
 document.getElementById('nickIcono').addEventListener('click', function () {
-    orden('nick', 'up');
+    orden('nick', metodoNick);
+    if (metodoNick == 'up') {
+        metodoNick = 'down';
+    } else {
+        metodoNick = 'up';
+    }
 });
 
 document.getElementById('puntosIcono').addEventListener('click', function () {
-    orden('puntos', 'up');
+    orden('puntos', metodoPuntos);
+    if (metodoPuntos == 'up') {
+        metodoPuntos = 'down';
+    } else {
+        metodoPuntos = 'up';
+    }
 });
 
 document.getElementById('fechaIcono').addEventListener('click', function () {
-    orden('fecha', 'up');
+    orden('fecha', metodoFecha);
+    if (metodoFecha == 'up') {
+        metodoFecha = 'down';
+    } else {
+        metodoFecha = 'up';
+    }
 });
-
 
 
 

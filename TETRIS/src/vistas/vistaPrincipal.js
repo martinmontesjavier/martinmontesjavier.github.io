@@ -1,3 +1,4 @@
+import { juego } from "../vistas/vistaJuego"
 export const principal = {
     template: `
     <!-- Pantalla de introducción -->
@@ -14,7 +15,10 @@ export const principal = {
     `,
 
     script: () =>{
-        boton.addEventListener('click', pintaRanking);
+        boton.addEventListener('click', () =>{
+            document.querySelector('main').innerHTML = juego.template
+            juego.script()
+        })
 // guardar.addEventListener('click', pintaDatosPartida);
 
 
