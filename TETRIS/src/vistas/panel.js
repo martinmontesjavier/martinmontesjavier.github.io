@@ -139,31 +139,33 @@ export const panel = {
       divJuegoPrincipal.innerHTML = panel.pintaPanel();
     },
 
+    eventoMover:(e)=>{
+      switch (e.key) {
+        case 'ArrowUp':
+          panel.borrarPieza()
+          panel.nuevaPieza.girar()
+          panel.insertarPieza(panel.nuevaPieza)
+          break;
+        case 'ArrowDown':
+          panel.bajar();
+          break;
+        case 'ArrowLeft':
+          panel.moverIzq();
+          break;
+        case 'ArrowRight':
+          panel.moverDra();
+          break;
+        case 'c':
+          panel.cambiarPieza();
+          break;
+        default:
+          break;
+      }
+    },
+
+
     controlTecla(){
-      document.addEventListener('keydown', (e)=>{
-        let tecla = e
-        switch (tecla.key) {
-          case 'ArrowUp':
-            panel.borrarPieza()
-            panel.nuevaPieza.girar()
-            panel.insertarPieza(panel.nuevaPieza)
-            break;
-          case 'ArrowDown':
-            panel.bajar();
-            break;
-          case 'ArrowLeft':
-            panel.moverIzq();
-            break;
-          case 'ArrowRight':
-            panel.moverDra();
-            break;
-          case 'c':
-            panel.cambiarPieza();
-            break;
-          default:
-            break;
-        }
-      })
+      document.addEventListener('keydown',panel.eventoMover)
     },
 
     borrarPieza(){
@@ -571,6 +573,14 @@ export const panel = {
       panel.nivel = 0
       panel.nuevaPieza = null
       panel.contadorLineas = 0
+
+      document.removeEventListener('keydown', panel.controlTecla)
+      // document.removeEventListener(panel.bajar())
+      // document.removeEventListener(panel.moverDra())
+      // document.removeEventListener(panel.moverIzq())
+      
+      // document.removeEventListener('keydown', panel.controlTecla())
+      
     }
   
 }
